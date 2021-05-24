@@ -18,9 +18,14 @@ function Folder() {
 
     return (
         <div>
-            {
-                child?.map(childList => childList.map((cld, index) => <ChildList folder={folder} key={index} child={cld}></ChildList>))
-            }
+            <div>
+                <h1 style={{ color: "red",margin:"50px",textAlign:"center" }}> Please refresh the page after inserting or deleting.</h1>
+            </div>
+            <div>
+                {
+                    child?.map(childList => childList.map((cld, index) => <ChildList folder={folder} key={index} child={cld}></ChildList>))
+                }
+            </div>
         </div>
     )
 }
